@@ -24,7 +24,7 @@ const NavBar = () => {
   return (
     <nav className="max-w-screen h-16 md:h-20 bg-white drop-shadow-xl sticky top-0 z-50 px-0 md:px-3 lg:px-40">
       <div className="flex items-center justify-between">
-        <HashLink to="#top" className="flex items-center">
+        <HashLink to="#" className="flex items-center">
           <div className="flex flex-col items-center mr-4">
             <img src={BrownTroutLogo} style={{ width: '70px', height: '70px' }} className="mt-1" alt="logo" />
           </div>
