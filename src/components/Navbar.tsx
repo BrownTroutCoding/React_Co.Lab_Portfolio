@@ -12,7 +12,7 @@ type LinkData = {
 };
 
 const links: LinkData[] = [
-  { title: "Introduction", url: "#intro" },
+  { title: "Bio", url: "#intro" },
   { title: "Projects", url: "#projects" },
   { title: "Dog Walker", url: "#dogwalk" },
 ];
