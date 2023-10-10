@@ -38,6 +38,9 @@ export default function Intro() {
                     {<FaArrowRight style={{ marginLeft: '9px' }} />}
                 </Button> 
             </div>
+            <div className="flex justify-center mt-5">
+                <h3 className='text-sx text-center px-6 py-3 border rounded-md shadow-lg max-w-2x1 font-serif'>As a recent graduate from Coding Temple's Software Engineering course and with a background in real estate, I offer a unique blend of problem-solving, data analysis, and clear communication skills, eager to transition into software development.</h3>
+            </div>
         </section>
     )
 }
