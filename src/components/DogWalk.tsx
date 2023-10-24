@@ -54,9 +54,8 @@ function DogWalk() {
                     <h3 className="text-xl mt-5 flex justify-center font-serif">
                     Wondering if the weather's right for a dog walk? We've got you covered! By using real-time data from the Open Weather Map, we can tell you if it's a good time to grab that leash.
                     </h3>
-                    <h2 className='text-xl mt-5 flex justify-center font-serif'>
-                    Just pop in your Zip Code below, and we'll fetch your walking recommendation.
-                    </h2>
+                    <h3 className='text-xl mt-5 flex justify-center font-serif'>Please allow for ~30seconds for the data to populate!
+                    </h3>
 
                 
     
