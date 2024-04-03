@@ -1,12 +1,13 @@
 import { useState } from 'react';
 import { FaGithub, FaArrowLeft, FaArrowRight, FaGlobe } from "react-icons/fa";
+import yeonjii from '../assets/Yeonjii.jpg'
 import scoutfortrout from '../assets/scoutfortrout-static.jpg';
-import bookClub from '../assets/BookClub.jpg';
+// import bookClub from '../assets/BookClub.jpg';
 import coinGecko from '../assets/coingecko.jpg';
 import spotify from '../assets/spotify.jpg';
-import carInventory from '../assets/car-inventory.jpg';
+// import carInventory from '../assets/car-inventory.jpg';
 import yellowstone from '../assets/yellowstone-project.jpg';
-import topTier from '../assets/top-tier.jpg';
+// import topTier from '../assets/top-tier.jpg';
 // import Button from '@mui/material/Button';
 // import { yellow } from '@mui/material/colors';
 
@@ -23,6 +24,15 @@ type Project = {
 
 const Projects: Project[] = [
     {
+        title: 'Yeonjii',
+        image: yeonjii,
+        tech: "Python, Flask, PostgreSQL, TypeScript, React, Tailwind CSS",
+        description: "Yeonjii is a cover letter generator powered by the OpenAI API. It enables users to input details from their job description, resume, and personal story. Utilizing best practices informed by user feedback and insights from talent acquisition specialists, the application crafts a well-structured and effective cover letter, tailored to the user's professional profile and job aspirations.",
+        backendUrl: 'https://github.com/Co-Lab-You-Belong-in-Tech/Craftly/tree/backend-branch',
+        frontendUrl: 'https://github.com/Co-Lab-You-Belong-in-Tech/Craftly/tree/frontend-branch',
+        siteLink: 'https://www.joincolab.io/product/Yeonjii-dcfd4',
+    },
+    {
         title: 'Scout for Trout',
         image: scoutfortrout,
         tech: "Python, Flask, PostgreSQL, JavaScript, React, Tailwind CSS",
@@ -31,15 +41,15 @@ const Projects: Project[] = [
         frontendUrl: 'https://github.com/BrownTroutCoding/ScoutForTrout-React',
         siteLink: 'https://scoutfortrout.com/',
     },
-    {
-        title: 'Book Club',
-        image: bookClub,
-        tech: "Python, Flask, PostgreSQL, JavaScript, React, Tailwind CSS",
-        description: "A digital platform designed for a local book club. This web app leverages Google authentication and CRUD functionalities allowing members to seamlessly update, add, or delete books from their library.",
-        backendUrl: 'https://github.com/BrownTroutCoding/Library',
-        frontendUrl: 'https://github.com/BrownTroutCoding/React-App-Library',
-        siteLink: 'https://joyful-starship-af61d0.netlify.app/#/',
-    },
+    // {
+    //     title: 'Book Club',
+    //     image: bookClub,
+    //     tech: "Python, Flask, PostgreSQL, JavaScript, React, Tailwind CSS",
+    //     description: "A digital platform designed for a local book club. This web app leverages Google authentication and CRUD functionalities allowing members to seamlessly update, add, or delete books from their library.",
+    //     backendUrl: 'https://github.com/BrownTroutCoding/Library',
+    //     frontendUrl: 'https://github.com/BrownTroutCoding/React-App-Library',
+    //     siteLink: 'https://joyful-starship-af61d0.netlify.app/#/',
+    // },
     {
         title: 'Coin Gecko',
         image: coinGecko,
@@ -56,15 +66,15 @@ const Projects: Project[] = [
         frontendUrl: 'https://github.com/BrownTroutCoding/Spotify_App',
         siteLink: 'https://radiant-blancmange-deb71d.netlify.app/',
     },
-    {
-        title: 'Car Inventory',
-        image: carInventory,
-        tech: "Python, Flask, PostgreSQL, JavaScript, React, Tailwind CSS",
-        description: "A digital garage at the fingertips of car aficianodos. Integrated Google authentication with CRUD functionalities allow users to display their prized vehicles on an active website.",
-        backendUrl: 'https://github.com/BrownTroutCoding/car-inventory',
-        frontendUrl: 'https://github.com/BrownTroutCoding/car-inventory-app',
-        siteLink: 'https://glittery-arithmetic-e60d96.netlify.app/#/',
-    },
+    // {
+    //     title: 'Car Inventory',
+    //     image: carInventory,
+    //     tech: "Python, Flask, PostgreSQL, JavaScript, React, Tailwind CSS",
+    //     description: "A digital garage at the fingertips of car aficianodos. Integrated Google authentication with CRUD functionalities allow users to display their prized vehicles on an active website.",
+    //     backendUrl: 'https://github.com/BrownTroutCoding/car-inventory',
+    //     frontendUrl: 'https://github.com/BrownTroutCoding/car-inventory-app',
+    //     siteLink: 'https://glittery-arithmetic-e60d96.netlify.app/#/',
+    // },
     {
         title: 'Yellowstone',
         image: yellowstone,
@@ -73,14 +83,14 @@ const Projects: Project[] = [
         frontendUrl: 'https://github.com/BrownTroutCoding/Park-website',
         siteLink: 'https://rainbow-sprinkles-d8e87d.netlify.app/',
     },
-    {
-        title: 'Top Tier Boxing',
-        image: topTier,
-        tech: "HTML & CSS",
-        description: "This HTML and CSS website serves as a digital front for a local boxing gym. Adorned with photos, videos, a sign-in component, and an integrated Google Reviews section, this site is an example of what I can achieve using purely HTML and CSS.",
-        frontendUrl: 'https://github.com/BrownTroutCoding/TopTier-Boxing',
-        siteLink: 'https://aesthetic-brigadeiros-5a25ad.netlify.app/',
-    },
+    // {
+    //     title: 'Top Tier Boxing',
+    //     image: topTier,
+    //     tech: "HTML & CSS",
+    //     description: "This HTML and CSS website serves as a digital front for a local boxing gym. Adorned with photos, videos, a sign-in component, and an integrated Google Reviews section, this site is an example of what I can achieve using purely HTML and CSS.",
+    //     frontendUrl: 'https://github.com/BrownTroutCoding/TopTier-Boxing',
+    //     siteLink: 'https://aesthetic-brigadeiros-5a25ad.netlify.app/',
+    // },
     
 ];
 
@@ -94,11 +104,11 @@ export default function ProjectsComponent() {
                 <h1>Projects</h1>
             </div>
             
-            <div className="project-image-container relative overflow-hidden w-full h-64 md:h-96">
+            <div className="project-image-container relative overflow-hidden w-full h-64 md:h-96 border">
                 <img src={currentProject.image} alt={currentProject.title} className="w-full h-full object-cover mb-4" />
 
                 {/* Hover Details */}
-                <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-80 opacity-0 hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center rounded">
+                <div className="border absolute top-0 left-0 w-full h-full bg-black bg-opacity-80 opacity-0 hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center rounded">
                     <h1 className="text-white mb-4 text-4xl">{currentProject.title}</h1>
                     <h3 className='text-white mb-2 text-xl'>{currentProject.tech}</h3>
                     <p className='text-white mb-4 text-sx m-20 mt-5'>{currentProject.description}</p>
